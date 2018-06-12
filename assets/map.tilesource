@@ -1,0 +1,94 @@
+image: "/assets/map.png"
+tile_width: 64
+tile_height: 64
+tile_margin: 0
+tile_spacing: 0
+collision: "/assets/map.png"
+material_tag: "tile"
+convex_hulls {
+  index: 0
+  count: 7
+  collision_group: "obstacles"
+}
+convex_hulls {
+  index: 7
+  count: 4
+  collision_group: "obstacles"
+}
+convex_hulls {
+  index: 11
+  count: 7
+  collision_group: "obstacles"
+}
+convex_hulls {
+  index: 18
+  count: 4
+  collision_group: ""
+}
+convex_hulls {
+  index: 22
+  count: 4
+  collision_group: ""
+}
+convex_hulls {
+  index: 26
+  count: 4
+  collision_group: "obstacles"
+}
+convex_hulls {
+  index: 30
+  count: 4
+  collision_group: "obstacles"
+}
+convex_hulls {
+  index: 34
+  count: 4
+  collision_group: "obstacles"
+}
+convex_hulls {
+  index: 38
+  count: 4
+  collision_group: ""
+}
+convex_hulls {
+  index: 42
+  count: 4
+  collision_group: ""
+}
+convex_hulls {
+  index: 46
+  count: 7
+  collision_group: "obstacles"
+}
+convex_hulls {
+  index: 53
+  count: 4
+  collision_group: "obstacles"
+}
+convex_hulls {
+  index: 57
+  count: 7
+  collision_group: "obstacles"
+}
+convex_hulls {
+  index: 64
+  count: 16
+  collision_group: "obstacles"
+}
+convex_hulls {
+  index: 80
+  count: 16
+  collision_group: "obstacles"
+}
+collision_groups: "obstacles"
+animations {
+  id: "anim"
+  start_tile: 1
+  end_tile: 1
+  playback: PLAYBACK_ONCE_FORWARD
+  fps: 30
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+extrude_borders: 2
+inner_padding: 0

@@ -1,7 +1,132 @@
 animations {
-  id: "New Animation"
+  id: "front-walk"
+  images {
+    image: "/assets/astronaut/front-1.png"
+  }
+  images {
+    image: "/assets/astronaut/front-2.png"
+  }
+  images {
+    image: "/assets/astronaut/front-1.png"
+  }
+  images {
+    image: "/assets/astronaut/front-3.png"
+  }
   playback: PLAYBACK_LOOP_FORWARD
-  fps: 60
+  fps: 10
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+animations {
+  id: "front-idle"
+  images {
+    image: "/assets/astronaut/front-1.png"
+  }
+  playback: PLAYBACK_NONE
+  fps: 10
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+animations {
+  id: "back-walk"
+  images {
+    image: "/assets/astronaut/back-1.png"
+  }
+  images {
+    image: "/assets/astronaut/back-2.png"
+  }
+  images {
+    image: "/assets/astronaut/back-1.png"
+  }
+  images {
+    image: "/assets/astronaut/back-3.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 10
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+animations {
+  id: "back-idle"
+  images {
+    image: "/assets/astronaut/back-1.png"
+  }
+  playback: PLAYBACK_NONE
+  fps: 10
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+animations {
+  id: "left-walk"
+  images {
+    image: "/assets/astronaut/left-1.png"
+  }
+  images {
+    image: "/assets/astronaut/left-2.png"
+  }
+  images {
+    image: "/assets/astronaut/left-1.png"
+  }
+  images {
+    image: "/assets/astronaut/left-3.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 10
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+animations {
+  id: "left-idle"
+  images {
+    image: "/assets/astronaut/left-1.png"
+  }
+  playback: PLAYBACK_NONE
+  fps: 10
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+animations {
+  id: "right-walk"
+  images {
+    image: "/assets/astronaut/right-1.png"
+  }
+  images {
+    image: "/assets/astronaut/right-2.png"
+  }
+  images {
+    image: "/assets/astronaut/right-1.png"
+  }
+  images {
+    image: "/assets/astronaut/right-3.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 10
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+animations {
+  id: "right-idle"
+  images {
+    image: "/assets/astronaut/right-1.png"
+  }
+  playback: PLAYBACK_NONE
+  fps: 10
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+animations {
+  id: "gem"
+  images {
+    image: "/assets/gem/gem-1.png"
+  }
+  images {
+    image: "/assets/gem/gem-2.png"
+  }
+  images {
+    image: "/assets/gem/gem-3.png"
+  }
+  playback: PLAYBACK_LOOP_PINGPONG
+  fps: 10
   flip_horizontal: 0
   flip_vertical: 0
 }

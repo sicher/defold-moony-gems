@@ -21,3 +21,6 @@ app_icon = /assets/appicons/appicon.ico
 [osx]
 app_icon = /assets/appicons/appicon.icns
 
+[physics]
+debug = 0
+
