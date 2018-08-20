@@ -10,7 +10,7 @@ function init(self)
 	self.correction = vmath.vector3()
 end
 
-local function anim(self)
+local function animate(self)
 	local f = "front"
 	if self.facing.y > 0 then
 		f = "back"
@@ -24,6 +24,11 @@ local function anim(self)
 	local moving = vmath.length_sqr(self.velocity) > 0.01
 	if moving then
 		a = hash(f .. "-walk")
+
+		-- dust particles
+		if math.random() < 0.1 then
+			particlefx.play("#dust")
+		end
 	end
 
 	if a ~= self.anim then
@@ -41,7 +46,7 @@ function update(self, dt)
 		self.facing = self.input
 	end
 
-	anim(self)
+	animate(self)
 
 	local p = go.get_position()
 	local newp = p + self.input * 150 * dt
@@ -54,7 +59,7 @@ function update(self, dt)
 end
 
 function on_message(self, message_id, message, sender)
-	if message_id == hash("contact_point_response") then
+	if message_id == hash("contact_point_response") and message.other_group == hash("obstacles") then
 		-- simple collision solver
 		local proj = vmath.dot(self.correction, message.normal)
 		local comp = (message.distance - proj) * message.normal
@@ -73,4 +78,10 @@ function on_input(self, action_id, action)
 	elseif action_id == hash("west") then
 		self.input.x = -1
 	end
+end
+
+function on_reload(self)
+	-- Add reload-handling code here
+	-- Remove this function if not needed
+	particlefx.play("#dust")
 end

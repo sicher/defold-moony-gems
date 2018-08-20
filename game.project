@@ -23,4 +23,6 @@ app_icon = /assets/appicons/appicon.icns
 
 [physics]
 debug = 0
+scale = 0.2
+gravity_y = -10.0
 

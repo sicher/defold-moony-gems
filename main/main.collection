@@ -23,8 +23,8 @@ instances {
   id: "gem"
   prototype: "/main/gem/gem.go"
   position {
-    x: 1049.0
-    y: 388.0
+    x: 580.0
+    y: 229.0
     z: 0.0
   }
   rotation {
@@ -39,132 +39,12 @@ instances {
     z: 1.0
   }
 }
-instances {
-  id: "gem1"
-  prototype: "/main/gem/gem.go"
+collection_instances {
+  id: "level"
+  collection: "/main/level/level.collection"
   position {
-    x: 570.0
-    y: 235.0
-    z: 0.0
-  }
-  rotation {
     x: 0.0
     y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "gem2"
-  prototype: "/main/gem/gem.go"
-  position {
-    x: 350.0
-    y: 1604.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "gem3"
-  prototype: "/main/gem/gem.go"
-  position {
-    x: 493.0
-    y: 818.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "gem4"
-  prototype: "/main/gem/gem.go"
-  position {
-    x: 1686.0
-    y: 577.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "gem5"
-  prototype: "/main/gem/gem.go"
-  position {
-    x: 1823.0
-    y: 1420.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "gem6"
-  prototype: "/main/gem/gem.go"
-  position {
-    x: 864.0
-    y: 1857.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "gem7"
-  prototype: "/main/gem/gem.go"
-  position {
-    x: 909.0
-    y: 1336.0
     z: 0.0
   }
   rotation {
@@ -180,67 +60,6 @@ instances {
   }
 }
 scale_along_z: 0
-embedded_instances {
-  id: "level"
-  data: "components {\n"
-  "  id: \"planet\"\n"
-  "  component: \"/main/planet.tilemap\"\n"
-  "  position {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  "embedded_components {\n"
-  "  id: \"collisionobject\"\n"
-  "  type: \"collisionobject\"\n"
-  "  data: \"collision_shape: \\\"/main/planet.tilemap\\\"\\n"
-  "type: COLLISION_OBJECT_TYPE_KINEMATIC\\n"
-  "mass: 0.0\\n"
-  "friction: 0.1\\n"
-  "restitution: 0.5\\n"
-  "group: \\\"obstacles\\\"\\n"
-  "mask: \\\"astronaut\\\"\\n"
-  "linear_damping: 0.0\\n"
-  "angular_damping: 0.0\\n"
-  "locked_rotation: false\\n"
-  "\"\n"
-  "  position {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  ""
-  position {
-    x: 0.0
-    y: 0.0
-    z: -1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
 embedded_instances {
   id: "gui"
   data: "components {\n"
